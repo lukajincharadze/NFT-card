@@ -1,12 +1,15 @@
 import { ReactComponent as EthereumIcon } from "./images/icon-ethereum.svg";
 import { ReactComponent as ClockIcon } from "./images/icon-clock.svg";
+import { ReactComponent as ViewIcon } from "./images/icon-view.svg";
 
 export default function CardComponent() {
   return (
     <div className="Box-div">
       <div className="Component-div">
         <div className="Card-Image-div">
-          <div className="Card-Overlay"></div>
+          <div className="Card-Overlay">
+            <ViewIcon className="Card-Icon" />
+          </div>
           <img className="Card-Image" src="image-equilibrium.jpg" alt="Logo" />
         </div>
         <p className="Card-Title">Equilibrium #3429</p>
@@ -16,7 +19,6 @@ export default function CardComponent() {
         <div className="Card-Eth-Date">
           <p className="Card-Eth">
             <EthereumIcon />
-
             <span className="Card-Date-Span-ETH">0.041 ETH</span>
           </p>
           <p className="Card-Date">
